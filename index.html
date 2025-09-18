@@ -2,27 +2,88 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>我的项目</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent IPI-SID Defense</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>我的项目标题</h1>
-        <p>作者姓名，隶属机构</p>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-900 text-white py-6">
+        <div class="container">
+            <h1 class="text-3xl md:text-4xl font-bold">Agent IPI-SID Defense</h1>
+            <p class="mt-2 text-lg">作者姓名，隶属机构</p>
+            <div class="mt-4 flex flex-wrap gap-4">
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">arXiv</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Demo</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Code</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Model</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Dataset</a>
+            </div>
+        </div>
     </header>
-    <section>
-        <h2>摘要</h2>
-        <p>项目的简要描述...</p>
+
+    <!-- Introduction -->
+    <section class="py-12 bg-white">
+        <div class="container">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6">引言</h2>
+            <div class="prose max-w-none">
+                <h3 class="text-xl font-semibold">摘要</h3>
+                <p>项目的简要描述...</p>
+                <h3 class="text-xl font-semibold mt-6">亮点</h3>
+                <ul class="list-disc pl-6">
+                    <li>关键特性 1</li>
+                    <li>关键特性 2</li>
+                </ul>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>亮点</h2>
-        <ul>
-            <li>关键特性 1</li>
-            <li>关键特性 2</li>
-        </ul>
+
+    <!-- Content -->
+    <section class="py-12 bg-gray-100">
+        <div class="container">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6">项目概览</h2>
+            <p class="prose max-w-none">
+                （此处添加项目概览内容，参考 ReKep 的结构，描述项目的工作原理或方法。图片占位符留空，可在未来添加。）
+            </p>
+        </div>
     </section>
-    <footer>
-        <p><a href="https://arxiv.org/abs/XXXX.XXXXX">论文</a> | <a href="https://github.com/username/repository">代码</a></p>
+
+    <!-- BibTeX -->
+    <section class="py-12 bg-white">
+        <div class="container">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6">BibTeX</h2>
+            <pre class="bg-gray-100 p-4 rounded">
+@misc{agentipi2025,
+    title = {Agent IPI-SID Defense},
+    author = {作者姓名},
+    year = {2025},
+    eprint = {待定},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.AI},
+    url = {待定}
+}
+            </pre>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6">
+        <div class="container">
+            <p>致谢：（此处添加致谢信息，如资助机构、合作者等。）</p>
+            <p class="mt-2">联系我们：（添加邮箱或联系方式）</p>
+        </div>
     </footer>
 </body>
 </html>
