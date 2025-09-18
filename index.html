@@ -1,89 +1,198 @@
+Hugging Face's logo
+Hugging Face
+Models
+Datasets
+Spaces
+Community
+Docs
+Enterprise
+Pricing
+
+
+
+Hugging Face is way more fun with friends and colleagues! 🤗 Join an organization
+Spaces:
+
+Z-Edgar
+/
+Agent-IPI-SID-Defense
+
+
+like
+0
+App
+Files
+Community
+Settings
+Agent-IPI-SID-Defense
+/
+index.html
+
+Z-Edgar's picture
+Z-Edgar
+Update index.html
+ebd5196
+verified
+about 2 hours ago
+raw
+
+Copy download link
+history
+blame
+edit
+delete
+
+5.63 kB
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agent IPI-SID Defense</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Agent-IPI-SID-Defense</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+            font-family: Arial, sans-serif;
+            margin: 0;
             color: #333;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background: linear-gradient(to right, #1E3A8A, #10B981);
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
         }
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 0 1.5rem;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        .authors {
+            font-size: 1em;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+        .buttons {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        button {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            background-color: #ffffff;
+            color: #1E3A8A;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        button i {
+            margin-right: 8px;
+        }
+        button:hover {
+            background-color: #10B981;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: -20px;
+        }
+        .abstract {
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 30px;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .description {
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-top: 20px;
         }
     </style>
 </head>
-<body class="bg-gray-100">
-    <!-- Header -->
-    <header class="bg-blue-900 text-white py-6">
+<body>
+    <div class="header">
         <div class="container">
-            <h1 class="text-3xl md:text-4xl font-bold">Agent IPI-SID Defense</h1>
-            <p class="mt-2 text-lg">作者姓名，隶属机构</p>
-            <div class="mt-4 flex flex-wrap gap-4">
-                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">arXiv</a>
-                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Demo</a>
-                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Code</a>
-                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Model</a>
-                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Dataset</a>
+            <h1>Agent-IPI-SID-Defense</h1>
+            <p class="subtitle">NOT JUST DETECTION</p>
+            <p class="authors"></p>
+            <div class="buttons">
+                <a href="#" onclick="alert('Paper link coming soon!'); return false;">
+                    <button><i class="fas fa-file-alt"></i> Paper</button>
+                </a>
+                <a href="https://huggingface.co/datasets/Z-Edgar/NOT_JUST_DETECTION_DATA" target="_blank">
+                    <button><i class="fas fa-database"></i> Dataset</button>
+                </a>
+                <a href="https://huggingface.co/Z-Edgar/Agent_Safe" target="_blank">
+                    <button><i class="fas fa-cogs"></i> Model</button>
+                </a>
+                <a href="https://huggingface.co/spaces/Z-Edgar/Agent_Safe" target="_blank">
+                    <button><i class="fas fa-eye"></i> Demo</button>
+                </a>
             </div>
-        </div>
-    </header>
-
-    <!-- Introduction -->
-    <section class="py-12 bg-white">
-        <div class="container">
-            <h2 class="text-2xl md:text-3xl font-semibold mb-6">引言</h2>
-            <div class="prose max-w-none">
-                <h3 class="text-xl font-semibold">摘要</h3>
-                <p>项目的简要描述...</p>
-                <h3 class="text-xl font-semibold mt-6">亮点</h3>
-                <ul class="list-disc pl-6">
-                    <li>关键特性 1</li>
-                    <li>关键特性 2</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Content -->
-    <section class="py-12 bg-gray-100">
-        <div class="container">
-            <h2 class="text-2xl md:text-3xl font-semibold mb-6">项目概览</h2>
-            <p class="prose max-w-none">
-                （此处添加项目概览内容，参考 ReKep 的结构，描述项目的工作原理或方法。图片占位符留空，可在未来添加。）
+            <p class="description">
+                Dataset: 400k+ prompt injection examples for training safe agents.<br>
+                Model: Agent_Safe.
             </p>
         </div>
-    </section>
-
-    <!-- BibTeX -->
-    <section class="py-12 bg-white">
-        <div class="container">
-            <h2 class="text-2xl md:text-3xl font-semibold mb-6">BibTeX</h2>
-            <pre class="bg-gray-100 p-4 rounded">
-@misc{agentipi2025,
-    title = {Agent IPI-SID Defense},
-    author = {作者姓名},
-    year = {2025},
-    eprint = {待定},
-    archivePrefix = {arXiv},
-    primaryClass = {cs.AI},
-    url = {待定}
-}
-            </pre>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h2>Abstract</h2>
+            <p class="abstract">
+                This paper proposes an innovative defense framework against indirect prompt injection attacks in agent systems, integrating structureaware attention-based detection with preference-aligned purification. Our method effectively identifies and removes malicious
+instructions embedded within structured interaction data, while
+preserving task utility and ensuring model security. Specifically,
+we design an end-to-end structured defense pipeline that combines
+supervised fine-tuning and reinforcement-based policy optimization to accurately filter adversarial content without compromising
+structural integrity. To support the training of the purification module, we construct the first adversarial dataset tailored to structured
+indirect injection scenarios. Furthermore, we introduce a novel
+attack variant that manipulates response data fields to simulate
+more deceptive and realistic threats targeting agent behavior. Experimental results on the AgentDojo benchmark demonstrate that,
+compared to existing detection-based defenses, our method not
+only significantly reduces attack success rates but also substantially
+improves the agent’s task completion performance in interactive
+settings.
+            </p>
+            <h2>Figures</h2>
+            <div class="images">
+                <!-- Placeholder images; replace with actual image URLs -->
+                <img src="https://via.placeholder.com/300x200?text=Figure+1" alt="Figure 1">
+                <img src="https://via.placeholder.com/300x200?text=Figure+2" alt="Figure 2">
+            </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-6">
-        <div class="container">
-            <p>致谢：（此处添加致谢信息，如资助机构、合作者等。）</p>
-            <p class="mt-2">联系我们：（添加邮箱或联系方式）</p>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
