@@ -73,7 +73,7 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             margin-top: -20px;
         }
-        .abstract {
+        .abstract, .ipi-description {
             line-height: 1.6;
             color: #444;
             margin-bottom: 30px;
@@ -141,11 +141,12 @@ only significantly reduces attack success rates but also substantially
 improves the agent’s task completion performance in interactive
 settings.
             </p>
-            <h2>Figures</h2>
+            <h2>Indirect Prompt Injection Attacks</h2>
+            <p class="ipi-description">
+                IPI attacks exploit external dependencies of LLM-based systems—such as web pages, APIs, and documents—by embedding hidden instructions in seemingly benign content. Unlike direct injections from user input, IPI passively and persistently contaminates the structured input pipeline in RAG and agent frameworks.
+            </p>
             <div class="images">
-                <!-- Placeholder images; replace with actual image URLs -->
-                <img src="https://via.placeholder.com/300x200?text=Figure+1" alt="Figure 1">
-                <img src="https://via.placeholder.com/300x200?text=Figure+2" alt="Figure 2">
+                <img src="/figures/攻击类型.png" alt="Attack Types">
             </div>
         </div>
     </div>
