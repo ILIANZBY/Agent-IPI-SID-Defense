@@ -73,7 +73,7 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             margin-top: -20px;
         }
-        .abstract, .ipi-description, .approach-description {
+        .ipi-description, .approach-description {
             line-height: 1.6;
             color: #444;
             margin-bottom: 30px;
@@ -105,9 +105,9 @@
             <p class="authors"></p>
             <div class="buttons">
                 <a href="https://github.com/ILIANZBY/Agent-IPI-SID-Defense" target="_blank">
-                    <button><i class="fab fa-github"></i> GitHub</button>
+                    <button><i class="fab fa-arxiv"></i> Arxiv</button>
                 </a>
-                <a href="https://huggingface.co/datasets/Z-Edgar/NOT_JUST_DETECTION_DATA" target="_blank">
+                <a href="https://huggingface.co/datasets/Z-Edgar/Agent-IPI-Structured-Interaction-Datasets" target="_blank">
                     <button><i class="fas fa-database"></i> Dataset</button>
                 </a>
                 <a href="https://huggingface.co/Z-Edgar/Agent_Safe" target="_blank">
@@ -125,28 +125,13 @@
     </div>
     <div class="container">
         <div class="content">
-            <h2>Abstract</h2>
-            <p class="abstract">
-                This paper proposes an innovative defense framework against indirect prompt injection attacks in agent systems, integrating structureaware attention-based detection with preference-aligned purification. Our method effectively identifies and removes malicious
-instructions embedded within structured interaction data, while
-preserving task utility and ensuring model security. Specifically,
-we design an end-to-end structured defense pipeline that combines
-supervised fine-tuning and reinforcement-based policy optimization to accurately filter adversarial content without compromising
-structural integrity. To support the training of the purification module, we construct the first adversarial dataset tailored to structured
-indirect injection scenarios. Furthermore, we introduce a novel
-attack variant that manipulates response data fields to simulate
-more deceptive and realistic threats targeting agent behavior. Experimental results on the AgentDojo benchmark demonstrate that,
-compared to existing detection-based defenses, our method not
-only significantly reduces attack success rates but also substantially
-improves the agent’s task completion performance in interactive
-settings.
-            </p>
             <h2>Indirect Prompt Injection Attacks</h2>
             <p class="ipi-description">
                 IPI attacks exploit external dependencies of LLM-based systems—such as web pages, APIs, and documents—by embedding hidden instructions in seemingly benign content. Unlike direct injections from user input, IPI passively and persistently contaminates the structured input pipeline in RAG and agent frameworks. The figure below illustrates the seven attack types we constructed, which we embedded into structured data to create a dataset of 470k QA pairs for training purposes.
             </p>
             <div class="images">
                 <img src="./figures/攻击类型.png" alt="Attack Types">
+                <img src="./figures/攻击内容.png" alt="Attack Content">
             </div>
             <h2>Proposed Approach</h2>
             <p class="approach-description">
