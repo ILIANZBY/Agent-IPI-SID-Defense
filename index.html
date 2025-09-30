@@ -73,7 +73,7 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             margin-top: -20px;
         }
-        .ipi-description, .approach-description {
+        .ipi-description, .approach-description, .dataset-description {
             line-height: 1.6;
             color: #444;
             margin-bottom: 30px;
@@ -133,11 +133,13 @@
                 <img src="./figures/攻击类型.png" alt="Attack Types">
                 <img src="./figures/攻击内容.png" alt="Attack Content">
             </div>
+            <h2>Dataset Description</h2>
+            <p class="dataset-description">
+                We construct the first adversarial dataset tailored to structured indirect injection scenarios, which contains 470,000 QA pairs designed to study indirect prompt injection in agent-structured interactions. It is split into a training set (80%) and a test set (20%). The dataset is evenly divided into 50% clean-clean QA pairs (no prompt injection) and 50% clean-injected QA pairs (containing prompt injection). The task is to detect and remove prompt injection content from the input data, outputting the cleaned data or the original data if no injection is present.
+            </p>
             <h2>Proposed Approach</h2>
             <p class="approach-description">
-                Our framework first analyzes collected structured data via structural attention shift detection to identify anomalous regions and
-generate alignment constraints. It then applies SFT and GRPO to purify the model, enabling accurate localization and removal of injected
-instructions while preserving structural integrity.
+                Our framework first analyzes collected structured data via structural attention shift detection to identify anomalous regions and generate alignment constraints. It then applies SFT and GRPO to purify the model, enabling accurate localization and removal of injected instructions while preserving structural integrity.
             </p>
             <div class="images">
                 <img src="./figures/总图.png" alt="Proposed Approach Diagram">
